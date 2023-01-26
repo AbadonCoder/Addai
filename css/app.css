@@ -1,0 +1,125 @@
+:root {
+    --primary: #3282B5;
+    --primary-dark: #0E4C75;
+    --primary-light: #BBE1F8;
+    
+    --dark: #1a1a1a;
+    --white: #ffffff;
+
+    --main-font: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+*, *::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+    font-family: var(--main-font);
+}
+
+body.login {
+    background-color: var(--primary-dark);
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: var(--primary-light);
+    border: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .3rem;
+    font-weight: 400;
+    transition: background-color .3s ease;
+}
+
+.btn:hover {
+    background-color: #7dadcb;
+    cursor: pointer;
+}
+
+.alert {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .3rem;
+    font-weight: bold;
+}
+
+.alert.error {
+    background-color: rgb(217, 1, 1);
+}
+
+.alert.success {
+    background-color: #5BB85D;
+}
+
+.form {
+    padding: 5rem 3rem;
+    background-color: var(--primary);
+    border-radius: .3rem;
+    box-shadow: -1px -2px 10px 0px var(--dark);
+    width: min(40rem, 100%);
+}
+
+.form__title {
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.field__input {
+    flex: 1;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: .3rem;
+}
+
+.field__input:focus {
+    outline: none;
+    border: .2rem solid var(--primary-dark);
+}
+
+.form__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
